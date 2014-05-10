@@ -33,6 +33,7 @@
 		4D72CFCD1916F99A00C4E6E8 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D72CFCB1916F99A00C4E6E8 /* Node.m */; };
 		4D72CFD31917257F00C4E6E8 /* TOLSearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D72CFD21917257F00C4E6E8 /* TOLSearchTableViewController.m */; };
 		4D72CFD7191889F500C4E6E8 /* TOLBuilder.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 4D72CFD6191889EF00C4E6E8 /* TOLBuilder.sqlite */; };
+		4DADA68F191E69E400793A93 /* TOLOpenSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DADA68E191E69E400793A93 /* TOLOpenSegue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,8 @@
 		4D72CFD11917257F00C4E6E8 /* TOLSearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOLSearchTableViewController.h; sourceTree = "<group>"; };
 		4D72CFD21917257F00C4E6E8 /* TOLSearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOLSearchTableViewController.m; sourceTree = "<group>"; };
 		4D72CFD6191889EF00C4E6E8 /* TOLBuilder.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = TOLBuilder.sqlite; sourceTree = "<group>"; };
+		4DADA68D191E69E400793A93 /* TOLOpenSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOLOpenSegue.h; sourceTree = "<group>"; };
+		4DADA68E191E69E400793A93 /* TOLOpenSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOLOpenSegue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +199,8 @@
 				4D72CFA61916A32D00C4E6E8 /* TOLDetailViewController.m */,
 				4D72CFA81916A32D00C4E6E8 /* Images.xcassets */,
 				4D72CF8E1916A32D00C4E6E8 /* Supporting Files */,
+				4DADA68D191E69E400793A93 /* TOLOpenSegue.h */,
+				4DADA68E191E69E400793A93 /* TOLOpenSegue.m */,
 			);
 			path = TOLBrowser;
 			sourceTree = "<group>";
@@ -360,6 +365,7 @@
 				4D72CF981916A32D00C4E6E8 /* TOLAppDelegate.m in Sources */,
 				4D72CFA41916A32D00C4E6E8 /* TOLMasterViewController.m in Sources */,
 				4D72CFD31917257F00C4E6E8 /* TOLSearchTableViewController.m in Sources */,
+				4DADA68F191E69E400793A93 /* TOLOpenSegue.m in Sources */,
 				4D72CFA71916A32D00C4E6E8 /* TOLDetailViewController.m in Sources */,
 				4D72CF941916A32D00C4E6E8 /* main.m in Sources */,
 				4D72CFC51916A42B00C4E6E8 /* TOLBuilder.xcdatamodeld in Sources */,

@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Mark Dixon. All rights reserved.
 //
 
+#import "TOLAppDelegate.h"
 #import "TOLMasterViewController.h"
 #import "Node.h"
 #import "TOLDetailViewController.h"
@@ -30,6 +31,8 @@
     [super viewDidLoad];
 
     self.detailViewController = (TOLDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+    TOLAppDelegate *appDelegate = (TOLAppDelegate *)[[UIApplication sharedApplication] delegate];
+    self.managedObjectContext = appDelegate.managedObjectContext;
 }
 
 - (void)didReceiveMemoryWarning
@@ -87,7 +90,7 @@
     else {
         TOLMasterViewController *dest = [storyboard instantiateViewControllerWithIdentifier:@"Master"];
         dest.parentId = node.id;
-        dest.managedObjectContext = self.managedObjectContext;
+//        dest.managedObjectContext = self.managedObjectContext;
         dest.title = node.name;
         [self.navigationController pushViewController:dest animated:YES];
     }

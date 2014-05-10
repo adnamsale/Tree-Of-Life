@@ -29,10 +29,10 @@
         controller.managedObjectContext = self.managedObjectContext;
         controller.parentId = 0;
     } else {
-        UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
-        TOLMasterViewController *controller = (TOLMasterViewController *)navigationController.topViewController;
-        controller.managedObjectContext = self.managedObjectContext;
-        controller.parentId = 0;
+//        UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
+//        TOLMasterViewController *controller = (TOLMasterViewController *)navigationController.topViewController;
+//        controller.managedObjectContext = self.managedObjectContext;
+//        controller.parentId = 0;
     }
     return YES;
 }
