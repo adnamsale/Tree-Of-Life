@@ -107,6 +107,10 @@ NSArray *results;
 #pragma mark - Search
 -(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
 {
+    if ([searchString length] < 3) {
+        results = [NSArray array];
+        return YES;
+    }
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     NSEntityDescription *entity = [NSEntityDescription
                                    entityForName:@"Node" inManagedObjectContext:self.managedObjectContext];
@@ -115,9 +119,6 @@ NSArray *results;
     [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"name contains %@ or desc contains %@", searchString, searchString]];
     
     results = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error];
-    if (300 < [results count]) {
-        results = [NSArray array];
-    }
     return YES;
 }
 @end
